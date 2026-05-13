@@ -1,0 +1,44 @@
+$color-button: #7e7e82;
+$border: #b8ffec;
+
+.menu {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    padding-left: 16px;
+    overflow: auto;
+
+  &__item {
+    white-space: nowrap;
+    display: flex;
+  }
+
+  &__button {
+    font-family: 'TT-lakes-medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: $color-button;
+    height: 100%;
+    cursor: pointer;
+    padding: 8px 16px;
+  }
+
+  &__item--active {
+    border: 2px solid $border;
+    border-radius: 5px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 24px;
+  }
+
+  @media (min-width: 1120px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-left: 32px;
+  }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title><spc></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="header__left">
+                        <button
+                            type="button"
+                            class="header__button header__button--burger"
+                        ></button>
+                        <div class="header__logo">
+                            <img
+                                src="img/logo.svg"
+                                alt="Логотип компании"
+                                class="header__logo-img"
+                            />
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__actions">
+                            <button
+                                type="button"
+                                class="header__button header__button--call header__button--hidden"
+                            ></button>
+                            <button
+                                type="button"
+                                class="header__button header__button--chat header__button--hidden"
+                            ></button>
+                            <button
+                                type="button"
+                                class="header__button header__button--profile header__button--hidden"
+                            ></button>
+                        </div>
+                        <div class="header__services">
+                            <div class="header__service">
+                                <p class="header__text">Оставить заявку</p>
+                                <button
+                                    type="button"
+                                    class="header__button header__button--service"
+                                ></button>
+                            </div>
+                            <div class="header__service">
+                                <p class="header__text">Статус ремонта</p>
+                                <button
+                                    type="button"
+                                    class="header__button header__button--status"
+                                ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__title">
+                    <h1 class="main__title-text">Услуги и сервисы</h1>
+                    <div class="main__services">
+                        <div class="main__service">
+                            <p class="main__text">Оставить заявку</p>
+                            <button
+                                type="button"
+                                class="header__button main__button--service"
+                            ></button>
+                        </div>
+                        <div class="main__service">
+                            <p class="main__text">Статус ремонта</p>
+                            <button
+                                type="button"
+                                class="header__button main__button--status"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item menu__item--active"
+                        ><button type="button" class="menu__button"
+                            >Ремонтируемые устройства</button
+                        ></li
+                    >
+                    <li class="menu__item"
+                        ><button type="button" class="menu__button"
+                            >Ремонтируемые бренды</button
+                        ></li
+                    >
+                    <li class="menu__item"
+                        ><button type="button" class="menu__button"
+                            >Цены на услуги</button
+                        ></li
+                    >
+                    <li class="menu__item"
+                        ><button type="button" class="menu__button"
+                            >Адреса сервисных центров</button
+                        ></li
+                    >
+                    <li class="menu__item"
+                        ><button type="button" class="menu__button"
+                            >Специальные цены</button
+                        ></li
+                    >
+                    <li class="menu__item"
+                        ><button type="button" class="menu__button"
+                            >Отзывы</button
+                        ></li
+                    >
+                </ul>
+                <div class="info">
+                    <div class="info__content">
+                        <div class="info__text">
+                            <p class="info__paragraph-one">
+                                Мы являемся авторизованным сервисным центром по
+                                ремонту техники Dell. Только у нас вы можете
+                                отремонтировать свой ноутбук Dell с официальной
+                                гарантией производителя.
+                            </p>
+                            <p class="info__paragraph-two">
+                                Мы успешно работаем с 1992 года и заслужили
+                                репутацию надежного партнера, что подтверждает
+                                большое количество постоянных клиентов. Мы
+                                гордимся тем, что к нам обращаются по
+                                рекомендациям и, в свою очередь, советуют нас
+                                родным и близким.
+                            </p>
+                        </div>
+                        <button type="button" class="info__button">
+                            Читать далее
+                        </button>
+                    </div>
+                    <div class="info__image">
+                        <img
+                            src="img/info-foto.jpg"
+                            alt="Фотография ремонта"
+                            class="info__image-img"
+                            width="320px"
+                            height="176px"
+                        />
+                    </div>
+                </div>
+            </main>
+        <div class="chapter">
+            <section class="section">
+               <p class="section__name">Ремонт техники различных брендов</p>
+             </section>
+               <section class="swiper-container"> 
+                <div class="image-slider swiper"> 
+                    <div class="image-slide__wrapper swiper-wrapper">
+                         <div class="image-slider__slide swiper-slide">
+                            <a class="link-bar" href="#">
+                            <div class="image-slider__image button-styling">
+                            <img src="img/lenovo.png" alt="Lenovo">
+                            </div>
+                        </a>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <a class="link-bar" href="#">
+                            <div class="image-slider__image button-styling">
+                                <img  src="img/samsung.png" alt="Samsung">
+                            </div> 
+                            </a>       
+                        </div> 
+                        <div class="image-slider__slide swiper-slide">
+                        <a class="link-bar" href="#">
+                            <div class="image-slider__image button-styling">
+                            <img  src="img/apple.png" alt="Apple">
+                            </div>
+                        </a>        
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                        <a class="link-bar" href="#">
+                            <div class="image-slider__image button-styling">
+                            <img  src="img/viewSonic.png" alt="ViewSonic">
+                            </div> 
+                        </a>       
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                        <a class="link-bar" href="#">
+                            <div class="image-slider__image button-styling">
+                            <img  src="img/bosh.png" alt="Bosch">
+                            </div>
+                        </a>        
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                        <a class="link-bar" href="#">
+                            <div class="image-slider__image button-styling">
+                            <img src="img/hp.png" alt="hp">
+                            </div> 
+                        </a>      
+                        </div>
+                        <div class="image-slider__slide swiper-slide hidden">
+                            <a class="link-bar" href="#">
+                                <div class="image-slider__image button-styling">
+                                <img  src="img/acer.png" alt="acer">
+                                </div>  
+                            </a>     
+                            </div>
+                            <div class="image-slider__slide swiper-slide hidden">
+                            <a class="link-bar" href="#">
+                                <div class="image-slider__image button-styling">
+                                <img  src="img/sony.png" alt="sony">
+                                </div> 
+                            </a>      
+                            </div>
+                            <div class="image-slider__slide swiper-slide large-screen-hidden hidden">
+                                <a class="link-bar" href="#">
+                                    <div class="image-slider__image button-styling">
+                                    <img  src="img/sony.png" alt="sony">
+                                    </div> 
+                                </a>      
+                            </div>
+                                <div class="image-slider__slide swiper-slide large-screen-hidden hidden">
+                                    <a class="link-bar" href="#">
+                                        <div class="image-slider__image button-styling">
+                                        <img  src="img/sony.png" alt="sony">
+                                        </div> 
+                                    </a>      
+                                </div>
+                                <div class="image-slider__slide swiper-slide large-screen-hidden hidden">
+                                    <a class="link-bar" href="#">
+                                        <div class="image-slider__image button-styling">
+                                        <img  src="img/acer.png" alt="acer">
+                                        </div>  
+                                    </a>     
+                                </div>
+                        </div> 
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    </div>
+                      <button id="toggleButton" onclick = "readMore()">Показать все</button> 
+                </section>
+             </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    </body>
+</html>

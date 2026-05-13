@@ -1,0 +1,165 @@
+$color: #1b1c21;
+
+.info {
+    padding-top: 24px;
+
+ &__paragraph-one {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.01em;
+    color: $color;
+    margin: 0;
+    padding: 0 16px 6px 16px;
+    font-family: 'TT-lakes-regular';
+  }
+
+  &__paragraph-two {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.01em;
+    color: $color;
+    margin: 0;
+    padding: 0 15px 10px 15px;
+    font-family: 'TT-lakes-regular';
+  }
+
+  &__button {
+    position: relative;
+    padding: 10px 10px 16px 35px;
+    font-weight: 400;
+    font-family: 'TT-lakes-medium';
+    font-size: 16px;
+  }
+
+  &__button::before {
+    content: '';
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-image: url("../img/5.svg");
+    left: 14px;
+    top: 60%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+  }
+
+  &__image {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__image-img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin-top: 8px;
+
+  &__text {
+    padding-right: 48px;
+    padding-left: 24px;
+    max-height: 152px;
+    overflow: hidden;
+  }
+
+  &__paragraph-one {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: $color;
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-family: 'TT-lakes-regular';
+  }
+
+  &__paragraph-two {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: $color;
+    margin: 0;
+    padding: 0 15px 0 0;
+    font-family: 'TT-lakes-regular';
+  }
+
+  &__button {
+    position: relative;
+    padding: 10px 10px 16px 45px;
+    font-weight: 400;
+    font-family: 'TT-lakes-medium';
+  }
+
+  &__button::before {
+    content: '';
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-image: url("../img/5.svg");
+    left: 25px;
+    top: 60%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+  }
+
+  &__image-img {
+    width: 360px;
+    height: 208px;
+    border-radius: 5px;
+    }  
+  }
+
+  @media (min-width: 1120px)  {
+    padding: 0; 
+    
+  &__paragraph-one,
+  &__paragraph-two {
+    padding-left: 0;
+  }
+  
+  &__text {
+    padding-left: 34px;
+    padding-right: 36px;
+    width: 490px;
+    max-height: 160px;
+    overflow: hidden;
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: $color;
+    position: relative;
+    padding: 10px 10px 16px 65px;
+    font-weight: 400;
+    font-family: 'TT-lakes-medium';
+  }
+
+  &__button::before {
+    content: '';
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-image: url("../img/5.svg");
+    left: 35px;
+    top: 60%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+  }
+
+  &__image-img {
+    width: 531px;
+    height: 307px;
+    border-radius: 5px;
+  }
+  }
+}

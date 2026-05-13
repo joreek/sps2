@@ -1,0 +1,183 @@
+$white: #ffffff;
+$primary-color: #ff3e79;
+$border-color: #d9fff5;
+$background-color: #eaeaea;
+
+.header {
+  background-color: $white;
+  padding: 24px 16px;
+  border-bottom: 1px solid $border-color;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    background-color: $primary-color;
+    border-radius: 50%;
+  }
+
+  &__logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo::before {
+    content: '';
+    height: 32px;
+    width: 2px;
+    background-color: $background-color;
+    border-radius: 1px;
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &__services {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 16px;
+    justify-content: flex-end;
+  }
+
+  &__service {
+    max-height: 40px;
+  }
+
+  &__service p {
+    display: none;
+  }
+
+  &__button--burger {
+    background-image: url("../img/burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__button--service {
+    background-image: url("../img/servise.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__button--status {
+    background-image: url("../img/status.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__button--call {
+    background-image: url("../img/call.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__button--chat {
+    background-image: url("../img/chat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__button--hidden {
+    display: none;
+  }
+
+  &__button--profile {
+    background-image: url("../img/profile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 16px;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    padding: 24px;
+  
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+  
+  &__left {
+    column-gap: 42px;
+  }
+  
+  &__service p {
+    display: none;
+  }
+
+  &__logo::before {
+    left: -20px;
+  }
+
+  &__button--hidden {
+    display: block;
+  }
+
+  &__button--profile::before {
+    content: '';
+    height: 32px;
+    width: 2px;
+    background-color: $background-color;
+    border-radius: 1px;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  }
+
+  @media (min-width: 1120px) {
+    height: 1px;
+    padding: 0;
+
+  &__right {
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+      
+  &__services {
+    display: none;
+  }
+  
+  &__logo {
+    display: none;
+  }
+
+  &__button--burger {
+    display: none;
+  }
+
+  &__button--call {
+    display: none;
+  }
+
+
+  &__button--chat {
+    display: none;
+  }
+
+  &__button--profile {
+    display: none;
+  }
+  }
+}
